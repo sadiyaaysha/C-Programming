@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include<string.h>
+int main(void) {
+	int h1,h2,m1,m2;
+	scanf("%d%d%d%d",&h1,&h2,&m1,&m2);
+	h1=(h1*60)+m1;
+	h2=(h2*60)+m2;
+	int sub;
+	sub=h2>h1?h2:h1;
+	int sub1=h2<h1?h2:h1;
+	int diff;
+	diff=sub-sub1;
+	if(diff>60)
+	{
+       int hours=diff/60;
+       int minu=diff%60;
+       printf("the hours is %d and min is %d",hours,minu);
+	}
+	else
+	{
+		printf("%d minutes is",diff);
+	}
+	
+}
