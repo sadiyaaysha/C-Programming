@@ -7,37 +7,7 @@ public static int romanConvert(String roman)
     {
         char convertToDecimal = roman.charAt(x);
 
-        switch (convertToDecimal)
-        {
-        case 'M':
-            decimal += 1000;
-            break;
-
-        case 'D':
-            decimal += 500;
-            break;
-
-        case 'C':
-            decimal += 100;
-            break;
-
-        case 'L':
-            decimal += 50;
-            break;
-
-        case 'X':
-            decimal += 10;
-            break;
-
-        case 'V':
-            decimal += 5;
-            break;
-
-        case 'I':
-            decimal += 1;
-            break;
-        }
-    }
+     
     if (romanNumeral.contains("IV"))
     {
         decimal-=2;
