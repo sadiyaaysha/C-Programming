@@ -2,9 +2,9 @@
 
 int main(void) {
 	int i;
-	int n=10;
-	int a[n];
-	for(i=0;i<n;i++)
+	int n1=10;
+	int a[n1];
+	for(i=0;i<n1;i++)
 	{
 		scanf("%d",&a[i]);
 		
